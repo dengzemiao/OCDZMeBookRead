@@ -45,5 +45,7 @@
         例如: @objc var readModel:DZMReadModel!
         
         原本的DZMeBookRead是Swift代码 如果需要进混编且需要用到参数或者方法 需要自己进去源代码中加入 @objc 在进行使用
+        
+        作者已经为部分可能使用的到的方法或属性添加了 @objc ！！！
     
     
