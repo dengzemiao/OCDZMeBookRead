@@ -23,6 +23,14 @@
     self.title = @"OC-DZMeBookRead";
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:animated];
+    
+    // 进入阅读页之后是白色状态栏
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:YES];
+}
+
 - (IBAction)clickRead:(UIButton *)sender {
     
     [MBProgressHUD showMessage:@"本地文件第一次解析慢,以后就会秒进了"];
